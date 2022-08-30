@@ -1,38 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
+  background: linear-gradient(88.41deg, #130f40 28.44%, #130f40 76.69%);
+  position: relative;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ellipse22 {
+  position: absolute;
+  border-radius: 50%;
+  width: 409px;
+  height: 409px;
+  left: -10%;
+  bottom: -30%;
+  opacity: 0.6;
+  border: 1.3771px solid #343249;
+  transform: rotate(10.89deg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Login {
+  margin-top: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Login img {
+  width: 215px;
+  height: 74px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Login form {
+  margin: 2em auto;
+  padding: 78px 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  width: 354px;
+  margin-bottom: 70px;
+}
+
+.form-header {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 132%;
+  padding-bottom: 10px;
+}
+
+.form-subhead {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 132%;
+  padding-bottom: 26px;
+}
+
+.Login form > label {
+  width: 354px;
+  margin-bottom: 25px;
+}
+
+.Login form label p {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #9b9b9b;
+  margin-bottom: 8px;
+}
+
+.Login form > label > input {
+  width: 338px;
+  height: 48px;
+  background: #a3a6bb;
+  border-radius: 8px;
+  color: black;
+  font-weight: 400;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding-left: 16px;
+}
+
+.Login form > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  color: #13113f;
+  font-weight: 600;
+}
+
+.Login form > div div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Login form > div input {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
 }
